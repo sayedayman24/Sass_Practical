@@ -41,6 +41,8 @@
 
         /* Start Services */
 .services {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     overflow: hidden;
     .service-box {
         float: $float-left;
@@ -73,8 +75,58 @@
 
         /* Start Our Players */
 .our-players {
-    
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    .player-box {
+        float: $float-left;
+        width: (100% / 5);
+        &:not(:last-of-type) {
+            padding-right: 20px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            max-width: 100%;
+        }
+        .player-title {
+            color: #666;
+            font-weight: normal;
+            span {
+                font-weight: bold;
+            }
+        }
+        .player-desc {
+            color: #777;
+            line-height: 1.7;
+            padding-bottom: 10px;
+        }
+        .link {
+            color: $redColor;
+        }
+    }
 }
         /* End Our Players */
+
+        /* Start Gallery */
+.gallery {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+    .gallery-box {
+        float: $float-left;
+        // width: (100% / 3);
+        width: (94% / 3);
+        &:not(:last-of-type) {
+            margin-right: 3%;
+        }
+        img {
+            // width: 360px;
+            // height: 180px;
+            max-width: 100%;
+        }
+    }
+}
+        /* End Gallery */
 
 
