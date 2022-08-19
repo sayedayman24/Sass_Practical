@@ -6,4 +6,4 @@ Learned from Elzero Web School Channel on youtube
 
 Link to the playlist I learned from (Arabic): https://youtube.com/playlist?list=PLDoPjvoNmBAz9sluuyOWPifXvySgrGma8
 
-old Design and using float :( 
+using float :( 
