@@ -1,3 +1,109 @@
+@import 'sass/helpers/variables';
+
 $float-left: right;
 $float-right: left;
 
+$text-right: left;
+$text-left: right;
+
+
+
+                /* Start Header */
+.header {
+    .logo {
+        width: 30%;
+        float: $float-left;
+        text-align: $text-left;
+    .navbar {
+        float: $float-left;
+        li {
+            float: $float-left;
+            
+        }
+    }
+}
+                /* End Header */
+
+        /* Start Services */
+.services {
+    .service-box {
+        float: $float-left;
+        &:not(:last-of-type) {
+            padding-right: 20px;
+        }  
+        }
+    }
+}
+
+.services .service-box .service-title svg {
+    margin-left: 1em;
+}
+
+
+        /* End Services */
+
+        /* Start Our Players */
+.our-players {
+    .player-box {
+        @media #{$minSmall} {
+            float: $float-left;
+        }
+        @media #{$minLarge} {
+            float: $float-left; 
+        }
+        @media (min-width: 1201px) {
+            float: $float-left;
+            &:not(:last-of-type) {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+        /* End Our Players */
+
+        /* Start Gallery */
+.gallery {
+    .gallery-box {
+        float: $float-right;
+        &:not(:last-of-type) {
+            margin-right: 3%;
+        }
+    }
+}
+        /* End Gallery */
+
+
+                /* Start Footer */
+.footer {
+    .footer-gallery, .info, .contact {
+        float: $float-left;
+    }
+    .footer-gallery {
+        .img-box {
+            img {
+                float: $float-left;
+            }
+        }
+    }
+    .copyright {
+        .text, .author  {
+            float: $float-left;
+        }
+        .author {
+            text-align: $text-right;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer .info {
+        float: none !important;;
+        
+    }
+    .footer .copyright .author {
+        text-align: center !important;
+    }
+}
+
+
+                /* End Footer */
