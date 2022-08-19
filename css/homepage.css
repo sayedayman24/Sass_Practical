@@ -17,15 +17,35 @@ a {
 }
 
 .container {
-  width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 
 .clearfix {
   clear: both;
+}
+
+@media (max-width: 991px) {
+  .text-center-xs {
+    text-align: center;
+  }
 }
 
 body {
@@ -75,6 +95,14 @@ button {
 .header .logo {
   width: 30%;
   float: left;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .header .logo {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
 }
 .header .logo h1 {
   margin-bottom: 0;
@@ -88,12 +116,31 @@ button {
   float: left;
   background-color: #e2494c;
   border-radius: 15px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .header .navbar {
+    width: 100%;
+    float: none;
+    margin-top: 30px;
+  }
 }
 .header .navbar li {
   width: 20%;
   float: left;
   font-size: 18px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .header .navbar li {
+    width: 100%;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1199px) {
+  .header .navbar li {
+    font-size: 15px;
+  }
 }
 .header .navbar li a {
   display: block;
@@ -119,6 +166,13 @@ button {
   border-radius: 15px;
   width: 400px;
   padding: 10px 15px;
+}
+@media (max-width: 767px) {
+  .main-header h2 {
+    font-size: 16px;
+    margin: 10px auto;
+    width: 200px;
+  }
 }
 .main-header:before {
   content: "";
@@ -179,11 +233,32 @@ button {
 .services .service-box:not(:last-of-type) {
   padding-right: 20px;
 }
+@media (max-width: 767px) {
+  .services .service-box {
+    float: none;
+    width: 100%;
+    padding-right: 0 !important;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .services .service-box .service-title {
+    font-size: 15px;
+  }
+  .services .service-box .service-title > * {
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-right: 0 !important;
+  }
+  .services .service-box .service-title svg {
+    width: 100%;
+  }
+}
 .services .service-box .service-title {
   margin-bottom: 15px;
 }
 .services .service-box .service-title svg {
-  height: 2.4em;
+  height: 2em;
   margin-right: 1em;
   opacity: 0.8;
   position: relative;
@@ -194,8 +269,18 @@ button {
   line-height: 1.7;
   padding-bottom: 10px;
 }
+@media (max-width: 767px) {
+  .services .service-box .service-desc {
+    font-size: 14px;
+  }
+}
 .services .service-box .link {
   color: #e2494c;
+}
+@media (max-width: 767px) {
+  .services .service-box .link {
+    font-size: 14px;
+  }
 }
 
 /* End Services */
@@ -204,6 +289,12 @@ button {
   padding-top: 5rem;
   padding-bottom: 5rem;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .our-players {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .our-players .player-box {
   float: left;

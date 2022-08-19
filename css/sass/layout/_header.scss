@@ -6,6 +6,12 @@
     .logo {
         width: 30%;
         float: $float-left;
+        text-align: $text-left;
+        @media #{$maxSmall} {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
         h1 {
             margin-bottom: 0;
             margin-top: 10px;
@@ -20,11 +26,24 @@
         float: $float-left;
         background-color: $redColor;
         border-radius: 15px;
+        overflow: hidden;
+        @media #{$maxSmall} {
+            width: 100%;
+            float: none;
+            margin-top: 30px;
+        }
         li {
             width: 20%;
             float: $float-left;
             font-size: 18px;
             text-align: center;
+            @media #{$maxSmall} {
+                width: 100%;
+                font-weight: bold;
+            }
+            @media #{$maxLarg} {
+                font-size: 15px;
+            }
             a {
                 display: block;
                 color: #fff;
