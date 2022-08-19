@@ -8,7 +8,12 @@
         float: $float-left;
     }
     .footer-gallery {
-        width: 50%;
+        @media #{$minSmall} {
+            width: 100%;
+        }
+        @media #{$minMedium} {
+            width: 50%;
+        }
         .img-box {
             overflow: hidden;
             margin-bottom: 20px;
@@ -38,7 +43,17 @@
         }
     }
     .info {
-        width: 25%;
+        @media #{$maxSmall} {
+            text-align: center;
+            float: none;
+            margin-bottom: 25px;
+        }
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
         ul {
             color: #888;
             line-height: 1.8;
@@ -60,7 +75,16 @@
         }
     }
     .contact {
-        width: 25%;
+        @media #{$maxSmall} {
+            text-align: center;
+            float: none;
+        }
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
         input[type="text"],
         input[type="email"],
         textarea {
@@ -90,10 +114,19 @@
         color: #888;
         .text, .author  {
             float: $float-left;
-            width: 50%
+            width: 50%;
+            @media #{$maxSmall} {
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
         }
         .author {
             text-align: $text-right;
+            @media #{$maxSmall} {
+                text-align: center;
+                margin-top: 20px;
+            }
         }
     }
 }

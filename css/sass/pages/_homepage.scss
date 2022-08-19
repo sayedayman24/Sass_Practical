@@ -106,11 +106,51 @@
         padding-top: 0;
         padding-bottom: 0;
     }
+    @media #{$maxMedium} {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media #{$maxLarg} {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .player-box {
-        float: $float-left;
-        width: (100% / 5);
-        &:not(:last-of-type) {
-            padding-right: 20px;
+        // float: $float-left;
+        // width: (100% / 5);
+        // &:not(:last-of-type) {
+        //     padding-right: 20px;
+        // }
+        @media #{$maxSmall} {
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 35px;
+            padding-right: 0 !important;
+            &:not(:last-of-type) {
+                border-bottom: 1px solid #a4a2a2;
+            }
+        }
+        @media #{$minSmall} {
+            float: $float-left;
+            width: (100% / 2);  
+            text-align: center;
+            margin-bottom: 35px;
+            border: none;
+            padding-right: 0 !important;  
+        }
+        @media #{$minLarge} {
+            float: $float-left;
+            width: (100% / 3);  
+            text-align: center;
+            margin-bottom: 35px;
+            padding-right: 0 !important;  
+        }
+        @media (min-width: 1201px) {
+            float: $float-left;
+            width: (100% / 5);
+            &:not(:last-of-type) {
+                padding-right: 20px;
+            }
         }
         img {
             width: 200px;
@@ -120,6 +160,7 @@
         .player-title {
             color: #666;
             font-weight: normal;
+            margin-bottom: 10px;
             span {
                 font-weight: bold;
             }
@@ -128,9 +169,18 @@
             color: #777;
             line-height: 1.7;
             padding-bottom: 10px;
+            @media #{maxSmall} {
+                max-width: 500px;
+                margin: auto;
+                padding: 10px;
+            }
         }
         .link {
             color: $redColor;
+            @media #{$maxMedium} {
+                display: block;
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -141,12 +191,22 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
     overflow: hidden;
+    @media #{$maxSmall} {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .gallery-box {
         float: $float-left;
         // width: (100% / 3);
         width: (94% / 3);
         &:not(:last-of-type) {
             margin-right: 3%;
+        }
+        @media #{$maxSmall} {
+            float: none;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 35px;
         }
         img {
             // width: 360px;

@@ -11,7 +11,7 @@
         border-radius: 15px;
         width: 400px;
         padding: 10px 15px;
-        @media #{$maxSmall} {
+        @media #{$maxLarg} {
             font-size: 16px;
             margin: 10px auto;
             width: 200px;
