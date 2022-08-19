@@ -1,3 +1,4 @@
+                    /* Start Buttons */        
 button {
     color: white;
     font-size: 14px;
@@ -7,3 +8,21 @@ button {
     border: 1px solid #777;
     border-radius: 10px;
 }
+
+.main-button {
+    background-color: $redColor;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    min-width: 120px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    // transition: background-color 0.2s;
+    @include prefixer(transition, background-color 0.2s, webkit moz o ms);
+    &:hover {
+        background-color: #2196f3;
+    }
+}
+                    /* End Buttons */

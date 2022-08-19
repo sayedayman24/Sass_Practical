@@ -24,12 +24,49 @@ a {
   position: relative;
 }
 
+.clearfix {
+  clear: both;
+}
+
 body {
   background-color: #fefefe;
   font-family: tahoma, arial, helvetica, sans-serif;
   font-size: 16px;
 }
 
+/* Start Buttons */
+button {
+  color: white;
+  font-size: 14px;
+  padding: 3px 20px;
+  font-weight: bold;
+  background-color: #1fc3fe;
+  border: 1px solid #777;
+  border-radius: 10px;
+}
+
+.main-button {
+  background-color: #e2494c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  min-width: 120px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -ms-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.main-button:hover {
+  background-color: #2196f3;
+}
+
+/* End Buttons */
+/* Start Header */
 .header {
   padding: 20px 0;
   border-bottom: 1px solid #9c9c9c;
@@ -68,6 +105,7 @@ body {
   cursor: pointer;
 }
 
+/* End Header */
 /* Start Main Heading */
 .main-header {
   position: relative;
@@ -214,3 +252,102 @@ body {
 }
 
 /* End Gallery */
+/* Start Footer */
+.footer {
+  background-color: #e2e2e2;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+.footer .footer-gallery, .footer .info, .footer .contact {
+  float: left;
+}
+.footer .footer-gallery {
+  width: 50%;
+}
+.footer .footer-gallery .img-box {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.footer .footer-gallery .img-box img {
+  width: 110px;
+  height: 110px;
+  max-width: 100%;
+  float: left;
+  border: 1px solid #777;
+  padding: 2px;
+}
+.footer .footer-gallery .img-box .text {
+  float: left;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: calc(100% - 140px);
+}
+.footer .footer-gallery .img-box .text h4 {
+  color: #e2494c;
+  margin: 12px 0 0;
+}
+.footer .footer-gallery .img-box .text p {
+  color: #888;
+  line-height: 1.9;
+  margin-top: 8px;
+}
+.footer .info {
+  width: 25%;
+}
+.footer .info ul {
+  color: #888;
+  line-height: 1.8;
+}
+.footer .info ul li span {
+  color: #e2494c;
+  cursor: pointer;
+}
+.footer .info h4 {
+  color: #888;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.footer .info p {
+  color: #888;
+}
+.footer .contact {
+  width: 25%;
+}
+.footer .contact input[type=text],
+.footer .contact input[type=email],
+.footer .contact textarea {
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  width: 100%;
+  outline: none;
+  text-indent: 5px;
+}
+.footer .contact textarea {
+  height: 140px;
+  resize: none;
+}
+.footer .section-title {
+  color: #444;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+.footer .copyright {
+  padding: 25px 0;
+  margin-top: 20px;
+  border-top: 1px solid #c5c5c5;
+  overflow: hidden;
+  color: #888;
+}
+.footer .copyright .text, .footer .copyright .author {
+  float: left;
+  width: 50%;
+}
+.footer .copyright .author {
+  text-align: right;
+}
+
+/* End Footer */
